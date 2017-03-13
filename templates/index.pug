@@ -1,0 +1,36 @@
+extends layout.pug
+
+block head
+  title Index
+
+block content
+  if user
+    p Vous êtes identifié.e comme #{user.email}
+    p Voici vos informations :
+    table.table
+      thead
+        tr
+          th Champ
+          th Valeur
+      tbody
+        each val, key in user
+          tr
+            th= key
+              unless key === 'location'
+                td= val
+              else
+                td
+                  table.table-bordered
+                    each addVal, addKey in val
+                      tr
+                        th= addKey
+                        td= addVal
+
+    p
+      a(href='/deconnexion/') Cliquez ici pour vous déconnecter
+      | .
+  else
+    p Vous n'êtes pas identifié.e
+    p
+      a(href='/connexion/') Cliquez ici pour vous connecter
+      | .

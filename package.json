@@ -1,0 +1,34 @@
+{
+  "name": "jlm-auth-passport-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlm2017/jlm-auth-passport-example.git"
+  },
+  "keywords": [
+    "jlm2017",
+    "jlm",
+    "oauth2",
+    "passport"
+  ],
+  "author": "Arthur Cheysson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlm2017/jlm-auth-passport-example/issues"
+  },
+  "homepage": "https://github.com/jlm2017/jlm-auth-passport-example#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-oauth2": "^1.4.0",
+    "pug": "^2.0.0-beta11",
+    "request": "^2.81.0"
+  }
+}
