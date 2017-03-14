@@ -28,4 +28,7 @@ app.get('/deconnexion/', auth.disconnect);
 app.get('/users/', controllers.getAllUsers);
 app.get('/users/:id', controllers.getUser);
 
+// do not change the port number for this test version,
+// or the auth server won't accept to redirect the users
+// to your app
 app.listen(8000);
